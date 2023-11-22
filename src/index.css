@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* css background-image generated using https://10015.io/tools/css-background-pattern-generator */
+.background {
+  background-image: radial-gradient(#ffffffd8 1.2px, transparent 0.5px), radial-gradient(#ffffff 1.5px, transparent 2.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #030e1d;
+}
+
+
+/* css loader generated using https://10015.io/tools/css-loader-generator */
+
+.blob {
+   width: 112px;
+   height: 112px;
+   display: grid;
+   background: #fff;
+   filter: blur(5.6px) contrast(10);
+   padding: 11.2px;
+   mix-blend-mode: darken;
+}
+
+.blob:before,
+.blob:after {
+   content: "";
+   grid-area: 1/1;
+   margin: 33.6px 0;
+   border-radius: 112px;
+   background: #474bff;
+   animation: bo4 2s infinite linear;
+}
+
+.blob:after {
+   --s: -1;
+}
+
+@keyframes bo4 {
+   100% {
+      transform: rotate(calc(var(--s,1)*1turn));
+   }
+}
+
+
+/* @keyframes spinner-fzua35 {
+   0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+   }
+
+   50% {
+      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+   }
+}
+@keyframes spinner-z355kx {
+   to {
+      transform: rotate(360deg);
+   }
+} */
